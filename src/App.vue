@@ -1,11 +1,10 @@
 <template>
   <div id="app">
-  <div class="contianer">
+  <div class="container">
     <div class="inner">
       <nav>
-        <router-link to="/" id="logo">
-        Raja Jamal Parvez
-        </router-link>
+        <router-link to="/" id="logo">Raja Jamal Parvez</router-link>
+        
         <ul>
           <li><router-link to="/">Home</router-link></li>
           <li><router-link to="/about">About</router-link></li>
@@ -22,5 +21,4 @@
 
 
 <style lang="scss" src="./global.scss">
-
 </style>
