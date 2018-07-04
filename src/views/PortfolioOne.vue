@@ -4,9 +4,10 @@
       <h1>Crypto LOGO</h1>
       <p class="subtxt">Description blah blah blah</p>
       <p class="subtxt">Skills and Experience blah blah blah</p>
+      <router-link to="/portfolio/two"><img src="../assets/arrow-down.svg" class="arrow arrow-down"></router-link>
     </div>
-    <div class="right-content img1">
-      <button> <router-link to="/portfolio/one">Browse Work</router-link> </button>
+    <div class="right-content img2">
+      <img src="../assets/logo.svg">
     </div>
   </div>
 </template>
@@ -16,15 +17,28 @@
 import HelloWorld from "@/components/HelloWorld.vue";
 
 export default {
-  name: "home",
+  name: "one",
   components: {
     HelloWorld
   }
 };
 </script>
 
-<style scoped>
-.img1 {
-  background: url('../assets/home.jpg');
+<style lang="scss" scoped>
+
+$page_color: #615B7E;
+
+h1 {
+  color: $page_color !important;
 }
+
+.img2 {
+  background: $page_color;
+
+  img {
+    width: 50%;
+  }
+}
+
+
 </style>
